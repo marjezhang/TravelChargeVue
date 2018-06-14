@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import App from './payRelationShip'
+import App from './billManager'
 
 const app = new Vue(App)
 app.$mount()

@@ -1,6 +1,19 @@
+import UserData from './Datas/UserData'
+
 const userMdl = {
   state: {
-    CurrentUser: {}
+    CurrentUser: new UserData(),
+    test1: 1
+  },
+  mutations: {
+    Login (state) {
+    // 1.wx的获取
+    // 2.获取后端信息验证
+    //   3.当前用户状态赋值
+    }
+  },
+  actions: {
+    //
   }
 }
 

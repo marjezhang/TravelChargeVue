@@ -21,7 +21,7 @@ function getEntry (rootSrc, pattern) {
 }
 
 const appEntry = { app: resolve('./src/main.js') }
-const pagesEntry = getEntry(resolve('./src'), 'pages/**/main.js')
+const pagesEntry = getEntry(resolve('./src'), '*/Pages/*Main.js')
 const entry = Object.assign({}, appEntry, pagesEntry)
 
 module.exports = {

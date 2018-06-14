@@ -10,7 +10,7 @@
 	"miniprogramRoot": "./dist/",
 	"compileType": "miniprogram",
 	"appid": "touristappid",
-	"projectname": "my-project",
+	"projectname": "TravelChargeVue",
 	"condition": {
 		"search": {
 			"current": -1,
