@@ -1,6 +1,8 @@
-class Login {
++++++class Login {
   constructor () {
     this._loginKey = ''
+    this._loginName = ''
+    this._loginType = ''
   }
 }
 

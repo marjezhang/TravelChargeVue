@@ -1,9 +1,14 @@
 import UserData from './Datas/UserData'
+import { CurrentUserOptMdl } from './currentUserOptMdl'
 
 const userMdl = {
+  namespaced: true,
   state: {
     CurrentUser: new UserData(),
     test1: 1
+  },
+  modules: {
+    CurrentUserOptMdl: CurrentUserOptMdl
   },
   mutations: {
     Login (state) {
