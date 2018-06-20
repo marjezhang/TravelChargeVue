@@ -1,5 +1,5 @@
 import UserData from './Datas/UserData'
-import { CurrentUserOptMdl } from './currentUserOptMdl'
+import { CurrentUserOptMdl } from './Service/currentUserOptMdl'
 
 const userMdl = {
   namespaced: true,
@@ -11,11 +11,7 @@ const userMdl = {
     CurrentUserOptMdl: CurrentUserOptMdl
   },
   mutations: {
-    Login (state) {
-    // 1.wx的获取
-    // 2.获取后端信息验证
-    //   3.当前用户状态赋值
-    }
+  //
   },
   actions: {
     //
