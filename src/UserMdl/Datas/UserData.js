@@ -5,7 +5,6 @@ class UserData {
     this._login = null
     this._userName = ''
   }
-
 }
 
 export default UserData
