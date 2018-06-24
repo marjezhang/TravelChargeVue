@@ -9,7 +9,8 @@ const currentUserOptMdl = {
   actions: {
     // 登录方法
     Login ({ dispatch, commit, getters, rootState }, ILoginAction) {
-      var loginobj = ILoginAction.LoginAction()
+      let loginobj = ILoginAction.LoginAction()
+      console.log(loginobj)
       loginobj.InitCurrentUserData(rootState)
     }
   }
