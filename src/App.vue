@@ -1,4 +1,6 @@
 <script>
+import LoginFromWxAction from './UserMdl/Service/Login/LoginFromWxAction'
+
 export default {
   created () {
     // 调用API从本地缓存中获取数据
@@ -7,6 +9,8 @@ export default {
     wx.setStorageSync('logs', logs)
 
     console.log('app created and cache logs by setStorageSync')
+    this.$store.dispatch('UserMdl/CurrentUserOptMdl/Login', new LoginFromWxAction())
+    console.log('微信登录')
   }
 }
 </script>
