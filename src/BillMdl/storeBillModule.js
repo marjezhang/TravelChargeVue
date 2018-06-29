@@ -4,7 +4,8 @@ import { CurrentBillOpt } from './Service/currentBillOpt'
 const billMdl = {
   namespaced: true,
   state: {
-    CurrentBill: new Bill()
+    CurrentBill: new Bill(),
+    test1: 'opq'
   },
   modules: {
     CurrentBillOptMdl: CurrentBillOpt
@@ -15,7 +16,8 @@ const billMdl = {
   actions: {
     // 登录事件订阅
     LoginForUser ({ state, rootState, commit, dispatch, getters, rootGetters }, defaultbillDto) {
-      dispatch('BillMdl/CurrentBillOptMdl/OpenBill', defaultbillDto)
+      console.log('bill mdl dispatch LoginForUser')
+      dispatch('CurrentBillOptMdl/OpenBill', defaultbillDto)
     }
   }
 }

@@ -13,12 +13,12 @@ class WxLoginObj extends BaseLoginObj {
     // 用户的语言，简体中文为zh_CN
     this.language = ''
 
-    this._user = {}
+    this.user = {}
   }
   InitCurrentUserData (rootState) {
     console.log('wxloginobj Initcurrentuserdata')
     // 1.直接请求数据
-    // rootState.CurrentUser._id = this._user._id
+    rootState.UserMdl.CurrentUser.Id = this.user.Id
   }
 }
 

@@ -23,6 +23,12 @@ class Login {
   set LoginName (value) {
     this._loginName = value
   }
+  get LoginType () {
+    return this._loginType
+  }
+  set LoginType (value) {
+    this._loginType = value
+  }
 }
 
 export default Login
