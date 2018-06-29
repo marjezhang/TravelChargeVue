@@ -10,7 +10,7 @@ export default {
 
     console.log('app created and cache logs by setStorageSync')
     this.$store.dispatch('UserMdl/CurrentUserOptMdl/Login', new LoginFromWxAction())
-    console.log('微信登录')
+    console.log('微信登录成功')
   }
 }
 </script>

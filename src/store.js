@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import { UserMdl } from './UserMdl/storeUserModule'
-import { BillMdl } from './BillMdl/storeModule'
+import { BillMdl } from './BillMdl/storeBillModule'
 
 Vue.use(Vuex)
 

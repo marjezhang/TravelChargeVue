@@ -7,11 +7,12 @@ const currentUserOptMdl = {
   //
   },
   actions: {
-    // 登录方法
+    // 登录方法事件
     Login ({ dispatch, commit, getters, rootState }, ILoginAction) {
       let loginobj = ILoginAction.LoginAction()
-      console.log(loginobj)
       loginobj.InitCurrentUserData(rootState)
+      // 发布一个事件给账单模块
+      dispatch('BillMdl/LoginForUser', loginobj._user)
     }
   }
 }

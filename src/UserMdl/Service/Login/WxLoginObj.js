@@ -16,8 +16,9 @@ class WxLoginObj extends BaseLoginObj {
     this._user = {}
   }
   InitCurrentUserData (rootState) {
+    console.log('wxloginobj Initcurrentuserdata')
     // 1.直接请求数据
-    rootState.CurrentUser._id = this._user._id
+    // rootState.CurrentUser._id = this._user._id
   }
 }
 
