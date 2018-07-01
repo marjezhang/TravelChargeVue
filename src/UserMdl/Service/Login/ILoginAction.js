@@ -1,5 +1,5 @@
 class ILoginAction {
-  LoginAction () {
+  async LoginAction () {
     throw new Error('return new Login')
   }
   InitStateUserInfo () {
